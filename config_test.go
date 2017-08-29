@@ -46,7 +46,7 @@ func TestGetNodeInfo(t *testing.T) {
 				clusterID: "my-cluster-ID",
 			}
 			if strings.HasPrefix(url.String(), "https://") {
-				info.mesosIDErr = errors.New("Can't get mesos ID over http")
+				info.mesosIDErr = errors.New("Can't get mesos ID over https")
 			} else {
 				info.mesosID = "my mesos id"
 			}
