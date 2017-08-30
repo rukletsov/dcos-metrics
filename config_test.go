@@ -18,19 +18,18 @@ package main
 
 import (
 	"context"
+	"errors"
 	"flag"
 	"io/ioutil"
 	"net"
 	"net/url"
 	"os"
+	"strings"
 	"testing"
 	"time"
 
-	"strings"
-
 	"github.com/Sirupsen/logrus"
 	"github.com/dcos/dcos-go/dcos/nodeutil"
-	"github.com/pkg/errors"
 	. "github.com/smartystreets/goconvey/convey"
 )
 
